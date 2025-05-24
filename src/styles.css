@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  font-family: 'Quantico', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00ffcc; 
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #f1c01d; 
+  margin: 1rem 0;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.3s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 204, 0.2);
+  border-color: #00ffcc;
+}
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Reemplaza los márgenes individuales de las cards */
+}
+.card p {
+  color: white;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.card img {
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.btn {
+  background: rgba(241, 192, 29, 0.8);
+  border: none;
+  border-radius: 50%; /* Botón circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: auto; /* Alineado a la derecha */
+}
+
+.btn:hover {
+  background: #f1c01d;
+  box-shadow: 0 0 15px rgba(241, 192, 29, 0.7);
+}
+
+.btn svg {
+  color: #1a1a2e; /* Color del icono */
+}
+
+.btn-warning {
+  background-color: #f1c01d;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 2rem;
+}
